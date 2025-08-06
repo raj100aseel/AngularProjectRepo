@@ -1,0 +1,19 @@
+<h3>String Interpolation</h3>
+<h4>username : {{username}}</h4>
+<h4>First Name : {{firstName}}</h4>
+<h4>Last Name : {{lastName}}</h4>
+<h4>Email : {{email}}</h4>
+<h4>Current Date : {{dateMessage}}</h4>
+
+<h3>Propery Binding</h3>
+<button id="b1" [disabled]="controlFlag">Submit</button>
+
+<h3>Event Binding</h3>
+username : <input type="text" placeholder="Enter New username" #myname>
+<br>
+<button id="b2" (click)="updateUsername(myname.value)">Update</button>
+
+<h3>Two Way Data Binding</h3>
+Address :  <input type="text" placeholder="Enter Address" [(ngModel)]="address">
+<br>
+Entered Address : {{address}}
