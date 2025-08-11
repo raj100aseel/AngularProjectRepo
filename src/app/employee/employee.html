@@ -1,0 +1,20 @@
+<h3>Employee Details</h3>
+<div *ngFor="let emp of employees">
+    Name : {{emp.name}}<br>
+    Designation : {{emp.designation}} <br>
+    Salary : {{emp.salary}}<br>
+    <div [ngSwitch]="emp.department">Department:
+        <span *ngSwitchCase="'1'">Accounts</span>
+        <span *ngSwitchCase="'2'">HR</span>
+        <span *ngSwitchCase="'3'">Loans</span>
+        <span *ngSwitchDefault>Others</span>
+    </div>
+    <br>
+    <div *ngIf="emp.address.length > 0">
+        Address : {{emp.address}}
+    </div>
+    <br>
+    <div *ngIf = "emp.phone.length > 0">
+        Phone : {{emp.phone}}
+    </div>
+</div>
