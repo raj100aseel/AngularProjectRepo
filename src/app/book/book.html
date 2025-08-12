@@ -1,0 +1,29 @@
+<form #book="ngForm" (ngSubmit)="onClickSubmit(book.value)">
+    Book Id <input type="text" name="bid"
+         placeholder="Enter Book Id" [(ngModel)]="bid"/><br>
+    Book Name <input type="text" name="bname"
+         placeholder="Enter Book Name" [(ngModel)]="bname"/><br>
+    Book Price <input type="text" name="price"
+         placeholder="Enter Book Price" [(ngModel)]="price"/><br>
+    <input type="submit" value="Submit"/>
+</form>
+<div>
+    <table border>
+        <caption>Book Details</caption>
+        <tbody>
+            <tr>
+                <th>Book Id</th>
+                <td>{{bid}}</td>
+            </tr>
+            <tr>
+                <th>Book Name</th>
+                <td>{{bname}}</td>
+            </tr>
+
+            <tr>
+                <th>Book Price</th>
+                <td>{{price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

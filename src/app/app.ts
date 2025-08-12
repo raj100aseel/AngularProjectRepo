@@ -5,10 +5,12 @@ import { Address } from './address/address';
 import { CommonModule } from '@angular/common';
 import { Employee } from './employee/employee';
 import { Angularpipes } from './angularpipes/angularpipes';
+import { Itemcomp } from './itemcomp/itemcomp';
+import { Book } from './book/book';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Binding,Address,Employee,Angularpipes],
+  imports: [RouterOutlet,Binding,Address,Employee,Angularpipes,Itemcomp,Book],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
